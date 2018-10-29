@@ -1,0 +1,114 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>
+      
+        Login &middot; 
+      
+    </title>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link href="assets/css/toolkit.css" rel="stylesheet">
+    
+    <link href="assets/css/application.css" rel="stylesheet">
+
+    <style>
+      /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+      /* this chunk of css is not part of the toolkit :) */
+      body {
+        width: 1px;
+        min-width: 100%;
+        *width: 100%;
+        background-image:url("home.jpg");
+        background-repeat:no-repeat;
+-webkit-background-size: 100% auto;
+-moz-background-size: 100% auto;
+-o-background-size: 100% auto;
+background-size: 100% auto ;
+      }
+    </style>
+
+  </head>
+
+
+<body  >
+  
+<div class="container py-4 fixed-top app-navbar">
+  <nav class="navbar navbar-transparent navbar-padded navbar-toggleable-sm">   
+
+    <div class="hidden-sm-down text-uppercase">
+      <ul class="navbar-nav">
+    <li class="nav-item">
+      <h4><a class="nav-link active" href="index.html">Home</a></h4>
+    </li>
+    <li class="nav-item">
+      <h4><a class="nav-link" href="Login.html">Login</a></h4>
+    </li>
+    <li class="nav-item">
+      <h4><a class="nav-link" href="Product.jsp">Products</a></h4>
+    </li>
+    <li class="nav-item">
+      <h4><a class="nav-link" href="Account.jsp">Account</a></h4>
+    </li>
+    <li class="nav-divider"></li>
+    <li class="nav-item">
+      <h4><a class="nav-link" href="About.html">About</a></h4>
+    </li>  </ul>
+    </div>
+  </nav>
+</div>
+
+
+<div class="container-fluid container-fill-height">
+  <div class="container-content-middle">
+    <form role="form" class="mx-auto text-center app-login-form" action="Login.jsp" method="post">
+        <img src="assets/img/brand.png" alt="brand">
+		<br>
+		<br>
+      <div class="form-group">
+        <input class="form-control" placeholder="Username" name="email">
+      </div>
+
+      <div class="form-group mb-3">
+        <input type="password" class="form-control" placeholder="Password" name="pass">
+      </div>
+
+      <div class="mb-5">
+        <button type="submit" class="btn btn-primary">Log In</button>
+        <button type="submit" formaction="SignUp.html" class="btn btn-secondary">Sign up</button>
+      </div>
+
+      <footer class="screen-login">
+        <b ><h4><a href="ForgotPass.html">Forgot password</a></h4></b>
+      </footer>
+    </form>
+  </div>
+</div>
+
+
+    <script src="assets/js/jquery.min.js"></script>    
+    <script src="assets/js/tether.min.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/toolkit.js"></script>
+    <script src="assets/js/application.js"></script>
+    <script>
+      // execute/clear BS loaders for docs
+      $(function(){
+        if (window.BS&&window.BS.loader&&window.BS.loader.length) {
+          while(BS.loader.length){(BS.loader.pop())()}
+        }
+      })
+    </script>
+  </body>
+</html>
+
